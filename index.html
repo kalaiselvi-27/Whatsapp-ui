@@ -71,7 +71,8 @@
             <li class="flex items-center flex-1 justify-between">
                 <div 
                 class="uppercase font-medium text-sm flex items-center space-x-2 relative">
-                <span class="">Chats</span>
+                <a href="./index.html">
+                    <span class="">Chats</span></a>
                 <span 
                 class="bg-white text-emerald-500 p-0.5 rounded-full w-5 h-5 text-xs flex justify-center font-medium"
                 >10</span>
@@ -80,22 +81,22 @@
             </div>
             <div 
             class="uppercase font-medium text-sm flex items-center space-x-2">
-            <a href="./status.html"><span class="">Status</span></a>
+            <a href="./status.html"><span class="text-gray-200">Status</span></a>
         </div>
         <div 
         class="uppercase font-medium text-sm flex items-center space-x-2">
-        <span class="">Calls</span>
+        <span class="text-gray-200">Calls</span>
     </div>
             </li>
         </ul>
 
         <!-- chats sreen -->
-        <div class="bg-white">
+        <div class="bg-white relative">
         <div class="flex px-3 py-5 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img src="https://ui-avatars.com/api/?name=Sharmi&background=random&colorks?"
                  alt="Sharmi"
-                 class="rounded-full p-0.5 bg-green-600">
+                 class="rounded-full p-0.5 border-2 border-green-700">
             </div>
             <div class="flex-1">
                 <h4 class="font-semibold">Sharmi&#128525</h4>
@@ -111,7 +112,7 @@
             <div>
                 <img src="https://ui-avatars.com/api/?name=kaviya&background=random&color=ak?"
                  alt="kaviya"
-                 class="rounded-full p-0.5 bg-green-600">
+                 class="rounded-full p-0.5 border-2 border-green-700">
             </div>
             <div class="flex-1">
                 <h4 class="font-semibold">Kaviya&#128536</h4>
@@ -159,7 +160,7 @@
             <div>
                 <img src="https://ui-avatars.com/api/?name=Sandy&background=random&color=skl?"
                  alt=Sandy
-                 class="rounded-full">
+                 class="rounded-full p-0.5 border-2 border-green-700">
             </div>
             <div class="flex-1">
                 <h4 class="font-semibold">Sandy&#128151</h4>
@@ -169,13 +170,14 @@
                <span class="text-gray-600 font-semibold text-sm">10:25AM</span>
                 
             </div>
-        </div>
-        <div class="bg-green-700 p-5">
-            <svg xmlns="http://www.w3.org/2000/svg"
-             width="32" height="32" 
-             viewBox="0 0 24 24">
-             <path fill="currentColor" d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
-        </div>
+            <div class="bg-emerald-800 w-12 h-12 rounded-full flex items-center justify-center absolute bottom-6 right-6 hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                 width="28" height="28" 
+                 viewBox="0 0 24 24"
+                 class="text-white fill-current">
+                 <path d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
+            </div>
+        </div>  
     </div>
     </section>
 </body>
