@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats | Whats app-UI</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Tailwind-css -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body class="bg-green-300">
+
+    <section class="max-w-md mx-auto">
+        <div 
+        class="bg-emerald-800 text-white px-3 py-5 flex items-center justify-between"
+        >
+            <h4 class="font-semibold">WhatsApp</h4>
+            <div class="flex">
+                <a href="https://github.com/kalaiselvi-27/Whatsapp-ui" target="_blank" title="github">
+                <!-- github icon -->
+                <svg
+                 xmlns="http://www.w3.org/2000/svg" 
+                 width="22" height="30" 
+                 viewBox="0 0 24 24"
+                 class="hover:cursor-pointer">
+                 <path fill="currentColor" d="M12.001 2c-5.525 0-10 4.475-10 10a9.994 9.994 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.28 9.28 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10"/></svg></a>
+                <!-- search icon -->
+                 <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="32"
+                height="32" 
+                viewBox="0 0 24 24"
+                class="fill-current"
+                >
+                <path d="M9.538 15.23q-2.398
+                 0-4.064-1.666T3.808 9.5q0-2.398 1.666-4.064t4.064-1.667q2.399 0 4.065 1.667q1.666 1.666 1.666 4.064q0 
+                1.042-.369 2.017q-.37.975-.97 1.668l5.908 5.907q.14.14.15.345q.01.203-.15.363q-.16.16-.353.16q-.195 
+                0-.354-.16l-5.908-5.908q-.75.639-1.725.989q-.975.35-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37
+                 1.37-3.361q0-1.99-1.37-3.36q-1.37-1.37-3.36-1.37q-1.99 0-3.361 1.37q-1.37 1.37-1.37 3.36q0 
+                 1.99 1.37 3.36q1.37 1.37 3.36 1.37" />
+                </svg>
+                <!-- 3dots icon -->
+                <a href="./settings.html" title="settings">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="32" 
+                height="32" 
+                viewBox="0 0 20 20"
+                class="fill-current">
+                    <path d="M9 
+                    15.25a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m0-5a1.25 1.25 0 1 1 2.5 0a1.25
+                     1.25 0 0 1-2.5 0m0-5a1.249 1.249 0 1 1 2.5 0a1.25 1.25 0 1 1-2.5 0" />
+                </svg>
+            </a>
+            
+            
+            </div>
+        </div>
+        <ul class="bg-emerald-800 px-3 py-2 text-white flex justify-between items-center space-x-4">
+            <li cl>
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                 width="32" 
+                 height="32" 
+                 viewBox="0 0 24 24"
+                 class="fill-current w-6"
+                 ><path d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z"/>
+                </svg>
+            </li>
+            <li class="flex items-center flex-1 justify-between">
+                <div 
+                class="uppercase font-medium text-sm flex items-center space-x-2 relative">
+                <a href="./index.html">
+                    <span class="">Chats</span></a>
+                <span 
+                class="bg-white text-emerald-500 p-0.5 rounded-full w-5 h-5 text-xs flex justify-center font-medium"
+                >4</span>
+
+                <div class=" absolute -right-1 top-8 w-20 h-1 bg-white"></div>
+            </div>
+            <div 
+            class="uppercase font-medium text-sm flex items-center space-x-2">
+            <a href="./status.html"><span class="text-gray-200">Status</span></a>
+        </div>
+        <div 
+        class="uppercase font-medium text-sm flex items-center space-x-2">
+        <a href="./calls.html"><span class="text-gray-200">Calls</span></a>
+    </div>
+            </li>
+        </ul>
+
+        <!-- chats sreen -->
+        <div class="bg-white relative">
+            <!-- <a href="./chats.html"> -->
+            <div class="flex px-3 py-4 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+                <div>
+                    <img width="64px" src="https://img.freepik.com/premium-photo/retro-mountain-bike-forest-park-road-3d-rendering_476612-20641.jpg?w=740"
+                     alt="My World"
+                     class="rounded-full">
+                </div>
+                <div class="flex-1">
+                    <h4 class="font-semibold">My World&#127757</h4>
+                    <p class="text-blue-600 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="20" 
+                        height="20" 
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" 
+                        d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m7 9c0 3.53-2.61 6.44-6 6.93V21h-2v-3.07c-3.39-.49-6-3.4-6-6.93h2a5 5 0 0 0 5 5a5 5 0 0 0 5-5z"/>
+                    </svg>10:05</p>
+                </div>
+                <div  class="flex flex-col items-center space-y-2">
+                   <span class="text-gray-600 font-semibold text-sm">Yesterday</span>
+                    <span class="text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" 
+                        width="20" height="20" 
+                        viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd" d="M11.28 1.22a.75.75 0 0 0-1.26.7L6.69 5.25H4.206c-1.114 0-1.671 1.346-.884 2.134l1.911 1.911l-3.72 4.135A2 2 0 0 0 1 14.768V15h.233a2 2 0 0 0 1.337-.513l4.135-3.721l1.911 1.91c.788.788 2.134.23 2.134-.883V9.31l3.33-3.33a.75.75 0 0 0 .7-1.261l-.603-.604l-2.293-2.293z" clip-rule="evenodd"/></svg></span>
+                </div>
+            </div>
+        <!-- </a> -->
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="70px" src="data:image/jpeg;base64,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"
+                 alt="Sharmi"
+                 class="rounded-full p-0.5 border-2 border-green-700">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Sharmi&#128525</h4>
+                <p class="text-gray-600 text-sm">Hello,how are you? kalai&#128109</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-green-600 font-semibold text-sm">04:35 PM</span>
+                <span class="w-5 h-5 p-1.5 rounded-full text-sm bg-emerald-600 flex items-center text-white
+                font-semibold">2</span>
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="70px" src="https://th.bing.com/th/id/OIP.dNdD8nEJGx1yDJsH2gSObgHaHA?rs=1&pid=ImgDetMain"
+                 alt="kaviya"
+                 class="rounded-full p-0.5 border-2 border-green-700">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Kaviya&#128536</h4>
+                <p class="text-gray-600 text-sm"> What is your Project?</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-green-600 font-semibold text-sm">02:50 PM</span>
+                <span class="w-5 h-5 p-1.5 rounded-full text-sm bg-emerald-600 flex items-center text-white
+                font-semibold">3</span>
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="64px" src="https://th.bing.com/th/id/OIP.O5F36F_MjAYXIULB3BEPVwHaHa?rs=1&pid=ImgDetMain"
+                 alt="malathi"
+                 class="rounded-full">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Malathi&#128154</h4>
+                <p class="text-gray-600 text-sm">Any idea about that?</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-green-600 font-semibold text-sm">01:43 PM</span>
+                <span class="w-5 h-5 p-1.5 rounded-full text-sm bg-emerald-600 flex items-center text-white
+                font-semibold">3</span>
+            </div>
+        </div>  
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="64px" src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-15.jpg"
+                 alt="Preethi"
+                 class="rounded-full">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Preethi</h4>
+                <p class="text-gray-600 text-sm">Where are you?</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-green-600 font-semibold text-sm">01:15 PM</span>
+                <span class="w-5 h-5 p-1.5 rounded-full text-sm bg-emerald-600 flex items-center text-white
+                font-semibold">2</span>
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="70px" src="https://www.goodmorninghdloveimages.com/wp-content/uploads/2020/04/Whatsapp-Profile-Photo-5.jpg"
+                 alt=Sandy
+                 class="rounded-full p-0.5 border-2 border-green-700">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Dalu&#128151</h4>
+                <p class="text-gray-600 text-sm flex"><svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                     width="20" 
+                     height="20" 
+                     viewBox="0 0 16 16"
+                     class="text-blue-600 fill-current">
+                     <path fill="none" stroke="currentColor" 
+                     stroke-linecap="round" 
+                     stroke-linejoin="round" stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5"/></svg>Can you call me?</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-gray-600 font-semibold text-sm">10:25 AM</span>
+                
+            </div>
+            
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="64px" src="https://th.bing.com/th/id/OIP.k_H1DJlb331_YUv4wLMvxQHaHJ?rs=1&pid=ImgDetMain"
+                 alt="malathi"
+                 class="rounded-full">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Amma&#129328</h4>
+                <p class="text-gray-600 text-sm">Hi&#128587 Maa Reached in my office ma</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-gray-600 font-semibold text-sm">10:00 AM</span>
+                
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="64px" src="https://media-maa2-2.cdn.whatsapp.net/v/t61.24694-24/328774893_2228044627389635_5340181369430360035_n.jpg?ccb=11-4&oh=01_AdSVWhRzUA-x8he6ivwcYU6Q9FnxmbdgSt_sHdvO17ks3A&oe=65A9ED79&_nc_sid=e6ed6c&_nc_cat=107"
+                 alt="Preethi"
+                 class="rounded-full">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">4 Golden star&#x2728 besties</h4>
+                <p class="text-gray-600 text-sm">You: Oii Pakki's</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-gray-600 font-semibold text-sm">09:55 AM</span>
+                
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="70px" src="https://media-maa2-2.cdn.whatsapp.net/v/t61.24694-24/328634661_918315692851053_7811765732660884634_n.jpg?ccb=11-4&oh=01_AdTk3_tPQLw7pe1cnZFASF7bjPccudWJf6kYYfwdJMMW8g&oe=65ADD542&_nc_sid=e6ed6c&_nc_cat=108"
+                 alt="My bro"
+                 class="rounded-full border-2 p-0.5 border-emerald-800">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">My bro</h4>
+                <p class="text-gray-600 text-sm">You reacted &#10084 to "Hmm bye"</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-gray-600 font-semibold text-sm">09:36 AM</span>
+            </div>
+        </div>
+        <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
+            <div>
+                <img width="70px" src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-15.jpg"
+                 alt="Suba sister"
+                 class="rounded-full p-0.5 border-2 border-emerald-700">
+            </div>
+            <div class="flex-1">
+                <h4 class="font-semibold">Suba sister</h4>
+                
+                <p class="text-gray-600 text-sm flex"><svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                     width="20" 
+                     height="20" 
+                     viewBox="0 0 16 16"
+                     class="text-blue-600 fill-current">
+                     <path fill="none" stroke="currentColor" 
+                     stroke-linecap="round" 
+                     stroke-linejoin="round" stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5"/></svg>ok sister</p>
+            </div>
+            <div  class="flex flex-col items-center space-y-2">
+               <span class="text-gray-600 font-semibold text-sm">09:20 AM</span>
+            </div>
+        </div>
+        <h4 class="flex py-3 text-gray-700 text-xs font-medium justify-center">Top and hold on a chat for more options</h4>
+        <hr>
+        <!-- lock icon -->
+        <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="52" 
+            viewBox="0 0 24 24"
+            class="fill-current text-gray-600 ">
+            <path  d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1q2.075 0 3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15q0-.825-.587-1.412T12 13q-.825 0-1.412.588T10 15q0 .825.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6z"/>
+            </svg>
+            <h6 class="text-gray-600 pb-6 pt-5 font-normal text-sm">
+        Your personal messages are <a href="https://www.whatsapp.com/security/?lg=en" target="_blank"><span class="text-emerald-700">end-to-end encrypted</span></a></h6>
+    
+        </div>
+        <!-- chat icon -->
+        <div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 sticky rounded-xl flex items-center justify-center bottom-3 hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg"
+             width="22" height="22" 
+             viewBox="0 0 24 24"
+             class="text-white fill-current">
+             <path d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
