@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp UI</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#25d366]">
+
+    <section class=" max-w-md mx-auto ">
+        <!--chat profile header -->
+        <div class="bg-[#075e54] text-white  flex px-3 py-3  items-center justify-between">
+            <!-- wrapping profile details -->
+            <div class="wrap-profile-desc flex gap-x-2 items-center">
+                <!-- back icon -->
+                <a href="./index.html" class="back_icon text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z" />
+                    </svg>
+                </a>
+                <!-- profile picture -->
+                <div class="">
+                    <img class="rounded-full w-8 h-8 object-cover" src="https://img.freepik.com/premium-photo/retro-mountain-bike-forest-park-road-3d-rendering_476612-20641.jpg?w=740" alt="jackie">
+                </div>
+                <!-- profile name -->
+                <div class="">
+                    <p class="text-lg">My World&#127757</p>
+                </div>
+            </div>
+
+            <!-- wrapping menus  -->
+            <div class="wrap-profile-options flex items-center gap-x-4">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l2.29 2.29c.63.63 1.71.18 1.71-.71V8.91c0-.89-1.08-1.34-1.71-.71L17 10.5z" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98z" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M12 20q-.825 0-1.413-.588T10 18q0-.825.588-1.413T12 16q.825 0 1.413.588T14 18q0 .825-.588 1.413T12 20Zm0-6q-.825 0-1.413-.588T10 12q0-.825.588-1.413T12 10q.825 0 1.413.588T14 12q0 .825-.588 1.413T12 14Zm0-6q-.825 0-1.413-.588T10 6q0-.825.588-1.413T12 4q.825 0 1.413.588T14 6q0 .825-.588 1.413T12 8Z" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <!-- ====================chat Area====================== -->
+        <div
+            class="chat-area  bg-chatarea-background bg-contain xl:px-4 xl:py-4 lg:px-4 lg:py-3 md:px-4 md:pt-3 md:pb-5 sm:px-3 sm:pt-3 sm:pb-5 px-3 pt-3 pb-8 overscroll-auto overflow-y-auto w-auto lg:h-[594px] md:h-[700px] sm:h-[700px] h-[700px] relative">
+            <!-- start date -->
+            <div
+                class="text-[8px] text-[#128c7e] bg-white w-fit py-1 px-2 shadow-lg rounded-lg mx-auto font-semibold  ">
+                26 september 2023
+            </div>
+
+            <!-- encrypted alert box -->
+            <div class="bg-[#dcf8c6] w-fit flex mx-auto mt-2 px-2 py-1 rounded-lg items-start">
+                <span class="mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                        <path fill="#128c7e"
+                            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z" />
+                    </svg></span>
+                <span class="mt-0.5 text-[8px] text-[#128c7e] font-medium"> &nbsp;
+                    Message and calls are end-to-end encrypted,No one outside of this chat,<br>not even whatsApp can
+                    read or
+                    listen to them, Tap to learn more.</span>
+            </div>
+            <!-- msg date -->
+            <div
+                class="text-[8px] text-[#128c7e] bg-white w-fit py-1 px-2 mt-2 shadow-lg rounded-lg mx-auto font-semibold  ">
+                Yestarday
+            </div>
+            <!-- jackie son chat -->
+
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+            rounded-br-lg rounded-bl-lg ms-auto flex  ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">Hello Dad👋</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:00 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!--  jackie chat-->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+            rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">yaara nee?</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:01 pm</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- jackie son chat -->
+
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+             rounded-br-lg rounded-bl-lg ms-auto flex  ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">Naan than appa unga pulla pesuran</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:02 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+            rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">pullayah!</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:03 pm</span>
+
+                    </div>
+                </div>
+            </div>
+            <!-- jackie son chat -->
+
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+           rounded-br-lg rounded-bl-lg ms-auto flex  ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">mmhhh </div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:04 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+            rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">revathi pullayah da?</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:05 pm</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- jackie son msg -->
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+           rounded-br-lg rounded-bl-lg ms-auto flex  ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">appah! </div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:06 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+            rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">vasanthi pullayah?</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:07 pm</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- jackie son msg -->
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+           rounded-br-lg rounded-bl-lg ms-auto flex  ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">appaahh!🤨 </div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:08 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+             rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">kowsalya pullayah daa?</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:10 pm</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- jackie son msg -->
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+           rounded-br-lg rounded-bl-lg ms-auto flex py-1 ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">appahh🤯 naanthan unga payan future la irunthu<br> time travel
+                        whatsApp
+                        la
+                        pesitu irukan </div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:11 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                        class="absolute  left-[0.4rem] text-[#dcf8c6]" version="1.1" x="0px" y="0px"
+                        enable-background="new 0 0 8 13" xml:space="preserve">
+                        <path opacity="0.13" fill="#dcf8c6  d=" M5.188,1H0v11.193l6.467-8.625
+                            C7.526,2.156,6.958,1,5.188,1z"></path>
+                        <path fill="#dcf8c6" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+              rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">whatsApp la time travelah pudhusa irukey 🤔</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:12 pm</span>
+
+                    </div>
+                </div>
+            </div>
+            <!-- jackie msg -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+             rounded-br-lg rounded-bl-lg me-auto flex  ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-xs text-black">Ama nee yaru pullada?,sollvey illayeh da</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:13 pm</span>
+
+                    </div>
+                </div>
+            </div>
+            <!-- chat date -->
+            <div
+                class=" mt-2 text-[8px] text-[#128c7e] bg-white w-fit py-1 px-2 shadow-lg rounded-lg mx-auto font-semibold  ">
+                Today
+            </div>
+            <!-- jackie son msg -->
+            <div class="jackieson-message bg-[#dcf8c6] mt-2 w-fit px-2  rounded-tl-lg 
+           rounded-br-lg rounded-bl-lg ms-auto flex py-1 ">
+                <div class="flex items-center">
+                    <div class="text-xs text-black">🤯 silukku pulla da venamovaney! </div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:50 pm</span>
+                        <span>
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#03a9f4"
+                                    d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class=" mt-2 text-[9px] text-black bg-white w-fit py-1 px-2 shadow-lg rounded-lg mx-auto font-semibold  ">
+                1 unread message
+            </div>
+            <!-- jackie message -->
+            <div class="jackie-message bg-white mt-2 w-fit px-2  rounded-tr-lg 
+            rounded-br-lg rounded-bl-lg me-auto flex mb-8 ">
+                <!-- chat tail -->
+                <div class="relative">
+                    <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1"
+                        x="0px" y="0px" class="absolute right-[0.4rem]">
+                        <path opacity="0.13" fill="red"
+                            d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                        <path fill="white" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center ">
+                    <div class="text-xs text-black">silukka😱</div>
+                    <div class="text-[8px]  pt-4 pb-0.5 flex gap-x-2">
+                        <span class="text-[#128c7e]"> &nbsp; 12:13 pm</span>
+
+                    </div>
+                </div>
+            </div>
+            <!-- msg input section -->
+
+            <section class="  flex justify-start gap-x-1  fixed top-[44.5rem]  lg:top-[38rem] sm:w-[425px] w-[360px]">
+                <div class="flex-1 relative ">
+                    <input type="text" placeholder="Message"
+                        class="border py-2 pr-[100px] pl-[50px] w-full rounded-full outline-none bg-white text-b lack text-sm"
+                        value="ada playboy movaney🤬">
+                    <div class="absolute top-0 left-2 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                            <path fill="grey"
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM8.5 8c.83 0 1.5.67 1.5 1.5S9.33 11 8.5 11S7 10.33 7 9.5S7.67 8 8.5 8zm8.25 6.75c-.95 1.64-2.72 2.75-4.75 2.75s-3.8-1.11-4.75-2.75c-.19-.33.06-.75.44-.75h8.62c.39 0 .63.42.44.75zM15.5 11c-.83 0-1.5-.67-1.5-1.5S14.67 8 15.5 8s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- ! Chat Right Emojis -->
+                    <div class="flex gap-x-4 absolute right-0 top-0 py-2 px-4 ml-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z">
+                                    </path>
+                                    <path fill="grey"
+                                        d="M18.71 17.565a4.25 4.25 0 0 0 0-6.01l-6.54-6.54A1 1 0 0 1 13.584 3.6l6.54 6.54a6.25 6.25 0 1 1-8.838 8.84l-7.954-7.955A4.501 4.501 0 0 1 9.698 4.66l7.953 7.953a2.752 2.752 0 0 1-3.892 3.891L6.513 9.257a1 1 0 0 1 1.414-1.415l7.247 7.247a.751.751 0 0 0 1.063-1.062L8.284 6.074A2.501 2.501 0 0 0 4.746 9.61l7.954 7.954a4.25 4.25 0 0 0 6.01 0Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="grey"
+                                    d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#128c7e] flex justify-center items-center w-10 h-10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m7 9c0 3.53-2.61 6.44-6 6.93V21h-2v-3.07c-3.39-.49-6-3.4-6-6.93h2a5 5 0 0 0 5 5a5 5 0 0 0 5-5h2Z">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+
+
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
