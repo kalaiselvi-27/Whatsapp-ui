@@ -9,6 +9,49 @@
 
     <!-- Tailwind-css -->
     <link rel="stylesheet" href="./assets/css/output.css">
+    <style>
+            @media screen and (max-width:320px){
+            #icon{
+                left: 260px;
+                }
+            } @media screen and (min-width:320px){
+            #icon{
+                left: 260px;
+                }
+            }
+            @media screen and (min-width:360px) {
+                #icon{
+                    left:300px;
+                }
+            }
+            @media screen and (min-width:375px){
+            #icon{
+                left: 315px;
+                }
+            }
+            @media screen and (min-width:412px) {
+                #icon{
+                left: 350px;
+            }
+            }
+            @media screen and (min-width:425px){
+            #icon{
+               left: 367px;
+            }
+            }
+            @media screen and (min-width:540px) {
+                #icon{
+                    left: 430px;
+                }
+            }
+            
+            @media screen and (min-width:768px){
+            #icon{
+                margin-left: 389px;
+                }
+            }
+
+    </style>
 </head>
 
 <body class="bg-green-300">
@@ -18,7 +61,7 @@
             <h4 class="font-semibold">WhatsApp</h4>
             <!-- github icon -->
             <div class="flex">
-                <a href="https://github.com/kalaiselvi-27/Whatsapp-ui" target="_blank">
+                <a href="https://github.com/kalaiselvi-27/Whatsapp-ui" target="_blank" title="github">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" width="22" height="30" viewBox="0 0 24 24"
                         class="hover:cursor-pointer">
@@ -36,8 +79,7 @@
                  1.99 1.37 3.36q1.37 1.37 3.36 1.37" />
                 </svg>
                 <!-- 3dots icon -->
-                <a href="./settings.html">
-                    <title>settings</title>
+                <a href="./settings.html" title="settings">
                     <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="32" 
@@ -219,7 +261,7 @@
         </div>
         </div>
         <!-- camera icon -->
-        <div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 bottom-3 sticky rounded-xl flex items-center justify-center hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+        <div id="icon" class=" bg-emerald-800 w-12 h-12 bottom-3 sticky rounded-xl flex items-center justify-center hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg"
              width="22" 
              height="22" 
