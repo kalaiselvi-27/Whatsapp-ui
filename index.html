@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats | Whats app-UI</title>
+    <title>Chats | WhatsApp-UI</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
     <!-- Tailwind-css -->
@@ -15,7 +15,7 @@
 
     <section class="max-w-md mx-auto">
         <div 
-        class="bg-emerald-800 text-white px-3 py-5 flex items-center justify-between"
+        class="bg-emerald-800 text-white px-3 pt-5 pb-2 flex items-center justify-between"
         >
             <h4 class="font-semibold">WhatsApp</h4>
             <div class="flex">
@@ -55,11 +55,9 @@
                      1.25 0 0 1-2.5 0m0-5a1.249 1.249 0 1 1 2.5 0a1.25 1.25 0 1 1-2.5 0" />
                 </svg>
             </a>
-            
-            
             </div>
         </div>
-        <ul class="bg-emerald-800 px-3 py-2 text-white flex justify-between items-center space-x-4">
+        <ul class="bg-emerald-800 px-3 pb-3 pt-5 text-white flex justify-between items-center space-x-4 sticky top-0">
             <li cl>
                 <svg 
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +77,7 @@
                 class="bg-white text-emerald-500 p-0.5 rounded-full w-5 h-5 text-xs flex justify-center font-medium"
                 >4</span>
 
-                <div class=" absolute -right-1 top-8 w-20 h-1 bg-white"></div>
+                <div class=" absolute -right-1 top-8 w-20 h-1.5 bg-white"></div>
             </div>
             <div 
             class="uppercase font-medium text-sm flex items-center space-x-2">
@@ -93,7 +91,7 @@
         </ul>
 
         <!-- chats sreen -->
-        <div class="bg-white relative">
+        <div class="bg-white">
             <a href="./chats.html">
             <div class="flex px-3 py-4 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
                 <div>
@@ -121,6 +119,7 @@
                 </div>
             </div>
         </a>
+        <!-- sharmi -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="70px" src="data:image/jpeg;base64,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"
@@ -137,6 +136,7 @@
                 font-semibold">2</span>
             </div>
         </div>
+        <!-- kaviya -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="70px" src="https://th.bing.com/th/id/OIP.dNdD8nEJGx1yDJsH2gSObgHaHA?rs=1&pid=ImgDetMain"
@@ -153,6 +153,7 @@
                 font-semibold">3</span>
             </div>
         </div>
+        <!-- malathi -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="64px" src="https://th.bing.com/th/id/OIP.O5F36F_MjAYXIULB3BEPVwHaHa?rs=1&pid=ImgDetMain"
@@ -168,7 +169,8 @@
                 <span class="w-5 h-5 p-1.5 rounded-full text-sm bg-emerald-600 flex items-center text-white
                 font-semibold">3</span>
             </div>
-        </div>  
+        </div> 
+         <!--preethi  -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="64px" src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-15.jpg"
@@ -185,6 +187,7 @@
                 font-semibold">2</span>
             </div>
         </div>
+        <!-- Dalu -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="70px" src="https://www.goodmorninghdloveimages.com/wp-content/uploads/2020/04/Whatsapp-Profile-Photo-5.jpg"
@@ -209,6 +212,7 @@
             </div>
             
         </div>
+        <!-- amma -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="64px" src="https://th.bing.com/th/id/OIP.k_H1DJlb331_YUv4wLMvxQHaHJ?rs=1&pid=ImgDetMain"
@@ -224,6 +228,7 @@
                 
             </div>
         </div>
+        <!-- gruop -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="64px" src="https://i.pinimg.com/originals/10/76/f5/1076f5dc82a4e649760b47af079ae867.jpg"
@@ -239,6 +244,7 @@
                 
             </div>
         </div>
+        <!-- my bro -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="70px" src="https://th.bing.com/th/id/OIP.bejL66liPJMLpT_RMZtWLQHaHa?w=640&h=640&rs=1&pid=ImgDetMain"
@@ -253,6 +259,7 @@
                <span class="text-gray-600 font-semibold text-sm">09:36 AM</span>
             </div>
         </div>
+        <!-- suba sis -->
         <div class="flex px-3 py-3 space-x-4 items-center hover: cursor-pointer hover:bg-gray-100">
             <div>
                 <img width="70px" src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-15.jpg"
@@ -285,18 +292,18 @@
             class="fill-current text-gray-600 ">
             <path  d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1q2.075 0 3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15q0-.825-.587-1.412T12 13q-.825 0-1.412.588T10 15q0 .825.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6z"/>
             </svg>
-            <h6 class="text-gray-600 pb-6 pt-5 font-normal text-sm">
+            <h6 class="text-gray-600 pb-4 pt-5 font-normal text-sm">
         Your personal messages are <a href="https://www.whatsapp.com/security/?lg=en" target="_blank"><span class="text-emerald-700">end-to-end encrypted</span></a></h6>
     
         </div>
         <!-- chat icon -->
-        <div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 sticky rounded-xl flex items-center justify-center bottom-3 hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+        <a href="./contacts.html"><div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 sticky rounded-xl flex items-center justify-center bottom-3 hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg"
              width="22" height="22" 
              viewBox="0 0 24 24"
              class="text-white fill-current">
              <path d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
-        </div>
+        </div></a> 
     </div>
     </section>
 </body>
