@@ -7,6 +7,49 @@
     <title>Calls | WhatsApp-UI</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
+    <style>
+        @media screen and (max-width:320px){
+        #icon{
+            left: 260px;
+            }
+        } @media screen and (min-width:320px){
+        #icon{
+            left: 260px;
+            }
+        }
+        @media screen and (min-width:360px) {
+            #icon{
+                left:300px;
+            }
+        }
+        @media screen and (min-width:375px){
+        #icon{
+            left: 315px;
+            }
+        }
+        @media screen and (min-width:412px) {
+            #icon{
+            left: 350px;
+        }
+        }
+        @media screen and (min-width:425px){
+        #icon{
+           left: 367px;
+        }
+        }
+        @media screen and (min-width:540px) {
+            #icon{
+                left: 430px;
+            }
+        }
+        
+        @media screen and (min-width:768px){
+        #icon{
+            margin-left: 389px;
+            }
+        }
+
+</style>
     <!-- Tailwind-css -->
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
@@ -245,7 +288,7 @@
         
         </div>
         <!-- call icon -->
-        <div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 sticky bottom-3 rounded-xl flex items-center justify-center hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+        <div id="icon" class=" bg-emerald-800 w-12 h-12 bottom-3 sticky rounded-xl flex items-center justify-center hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" 
             width="22" height="22"
             viewBox="0 0 24 24"

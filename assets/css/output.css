@@ -657,12 +657,20 @@ video {
   right: -1rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-3 {
   bottom: 0.75rem;
 }
 
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.left-10 {
+  left: 2.5rem;
 }
 
 .left-2 {
@@ -683,6 +691,10 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.top-14 {
+  top: 3.5rem;
 }
 
 .top-8 {

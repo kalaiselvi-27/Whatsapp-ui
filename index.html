@@ -6,7 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chats | WhatsApp-UI</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <style>
+        @media screen and (max-width:320px){
+        #icon{
+            left: 260px;
+            }
+        } @media screen and (min-width:320px){
+        #icon{
+            left: 260px;
+            }
+        }
+        @media screen and (min-width:360px) {
+            #icon{
+                left:300px;
+            }
+        }
+        @media screen and (min-width:375px){
+        #icon{
+            left: 315px;
+            }
+        }
+        @media screen and (min-width:412px) {
+            #icon{
+            left: 350px;
+        }
+        }
+        @media screen and (min-width:425px){
+        #icon{
+           left: 367px;
+        }
+        }
+        @media screen and (min-width:540px) {
+            #icon{
+                left: 430px;
+            }
+        }
+        
+        @media screen and (min-width:768px){
+        #icon{
+            margin-left: 389px;
+            }
+        }
 
+</style>
     <!-- Tailwind-css -->
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
@@ -15,7 +57,7 @@
 
     <section class="max-w-md mx-auto">
         <div 
-        class="bg-emerald-800 text-white px-3 pt-5 pb-2 flex items-center justify-between"
+        class="bg-emerald-800 text-white px-3 py-5 flex items-center justify-between"
         >
             <h4 class="font-semibold">WhatsApp</h4>
             <div class="flex">
@@ -297,13 +339,13 @@
     
         </div>
         <!-- chat icon -->
-        <a href="./contacts.html"><div style="margin-left: 388px;" class="bg-emerald-800 w-12 h-12 sticky rounded-xl flex items-center justify-center bottom-3 hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
+        <a href="./contacts.html"></a><div id="icon" class=" bg-emerald-800 w-12 h-12 bottom-3 sticky rounded-xl flex items-center justify-center hover:bg-emerald-900 cursor-pointer shadow-lg shadow-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg"
              width="22" height="22" 
              viewBox="0 0 24 24"
              class="text-white fill-current">
              <path d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
-        </div></a> 
+        </div> </a>
     </div>
     </section>
 </body>
